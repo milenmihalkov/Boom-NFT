@@ -1,5 +1,5 @@
-import Example from "../src/components/example/Example";
+import App from "../src/App";
 
 export default function Index() {
-  return <Example />;
+  return <App />;
 }
