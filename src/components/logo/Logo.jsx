@@ -8,10 +8,10 @@ const Logo = ({ type = 'default' }) => {
     }
 
   return (
-    
+   
     <img
     src={`../images/logo${imgName[type]}.svg`}
-    alt="Logos"
+    alt="Logo"
     />
   );
 };
