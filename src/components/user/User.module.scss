@@ -1,4 +1,19 @@
 @use "../../styles/colors";
-.user{
 
+.user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.name{
+    color: colors.$text_primary;
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+
+.info{
+    color: colors.$secondary_main;
+    font-weight: 600;
+    font-size: 0.8rem;
 }

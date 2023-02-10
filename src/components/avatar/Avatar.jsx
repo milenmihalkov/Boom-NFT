@@ -3,7 +3,7 @@ import classNames from "classnames";
 import style from "./Avatar.module.scss";
 
 
-export default function Avatar ({ size = 90, url = "/images/avatar.png", verified = false }) {
+export default function Avatar ({ size = 90, url, verified = false }) {
 
     return (
       <div className={classNames(style.avatar)} style={{ width: size, height: size }}>
