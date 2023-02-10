@@ -12,7 +12,7 @@ const App =()=> {
     return (
       <div className="App">
         <Header />
-        <Avatar/>
+        <Avatar />
       </div>
     );
   };
