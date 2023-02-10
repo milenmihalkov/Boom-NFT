@@ -1,18 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Logo = ({ type = 'default' }) => {
 
-    const imgName = {
-        'default':'',
-        'muted':'-muted'
-    }
-
   return (
-   
-    <img
-    src={`/images/logo${imgName[type]}.svg`}
-    alt="Logo"
-    />
+    <>
+    {type === 'default' && <img src='./images/logo.svg' alt="Default logo"></img>} 
+    {type ==='muted' && <img src='./images/logo-muted.svg' alt="Muted logo"></img>}
+    </>
   );
 };
 
