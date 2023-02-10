@@ -1,0 +1,32 @@
+@use "../../styles/colors";
+
+
+.wrapper {
+    padding: 10px;
+    background-color: colors.$background_paper;
+  }
+.container {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+ .logo img{
+    line-height: 0 !important;
+ }
+.searchField{
+    background-color: colors.$background_default;
+    color: colors.$text_primary;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.searchIcon{
+    color: colors.$text_primary;
+}
+
+.linkButton, .buttonText{
+    color: colors.$text_secondary !important;
+    font-size: 12px !important;
+    font-weight:400 ;
+}
