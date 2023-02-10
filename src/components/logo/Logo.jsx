@@ -10,7 +10,7 @@ const Logo = ({ type = 'default' }) => {
   return (
    
     <img
-    src={`../images/logo${imgName[type]}.svg`}
+    src={`/images/logo${imgName[type]}.svg`}
     alt="Logo"
     />
   );
