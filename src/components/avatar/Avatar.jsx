@@ -21,10 +21,10 @@ import styles from "./Avatar.module.scss";
 export default function Avatar({ size = 90, verified = false, url }) {
   return (
     <div
-      style={{ width: size , height: size}}
-      className={classNames(styles.avatar)}
+        style={{ width: size + "px", height: size + "px" }}
+        className={classNames(styles.avatar)}
     >
-      <img src={url} alt="" className={classNames(styles.image)} />
+      <img src={url} alt="Avatar" className={classNames(styles.image)} />
       {verified && (
         <img src="/images/verified.svg" className={classNames(styles.badge)} />
       )}
