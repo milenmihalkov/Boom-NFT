@@ -1,16 +1,18 @@
 import React from "react";
 import Header from "./components/header/Header";
+import Avatar from "./components/avatar/Avatar";
 // import Paper from "@mui/material/Paper";
 // import Container from "@mui/material/Container";
 // import Link from "../link/Link";
 // import classNames from "classnames";
 
 
+
 const App =()=> {
     return (
       <div className="App">
         <Header />
-        <h1>Welcome to my App</h1>
+        <Avatar/>
       </div>
     );
   };
