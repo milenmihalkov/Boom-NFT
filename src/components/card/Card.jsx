@@ -16,7 +16,7 @@ import Chip from "@mui/material/Chip";
 
 export default function NftCard({
     name="Clock",
-    likes   =1.1,
+    likes   =0,
     mediaUrl="./images/nft.jpg",
     user    ={
         avatar:{
@@ -45,13 +45,12 @@ export default function NftCard({
                 <Typography variant="body2" className={classNames(styles.detailsWrapper)}>
                     <div className={classNames(styles.infoWrapper)}>
                         <p className={classNames(styles.title)}>{name}</p>
-                        <p className={classNames(styles.price)}>{price} {currency}</p>
+                        <p className={classNames(styles.price)}>~{price} {currency}</p>
                     </div>
                     <div className={classNames(styles.likesWrapper)}>
                         <Chip 
                             className={classNames(styles.likes)}  
                             label={millify(likes)} 
-    
                             avatar={
                             <FavoriteIcon 
                                 className={classNames(styles.icon)}
