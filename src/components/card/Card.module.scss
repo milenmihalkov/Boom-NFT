@@ -1,0 +1,45 @@
+@use "../../styles/colors";
+@use "../../styles/fonts";
+
+.card{
+    height: 443px;
+    width: 339px;
+    border-radius: 15px;    
+    padding: 0 15px;
+}
+.media{
+    border-radius: 20px;
+}
+.detailsWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoWrapper{
+    
+}
+
+.title{
+    font-family: fonts.$font-family-Montserrat;
+    font-weight: fonts.$card-title-font-weight;
+    margin: 0;
+}
+.price{
+    font-family: fonts.$font-family-Montserrat;
+    font-weight: fonts.$card-price-font-weight;
+    color: colors.$secondary_main !important;
+    margin: 0;
+}
+
+.likesWrapper{
+    background-color: colors.$background_paper !important;;
+}
+
+.likes{
+    border: 2px solid colors.$secondary_main !important;
+    color: colors.$secondary_main !important;
+}
+.icon{
+    color: colors.$secondary_main !important;
+}
