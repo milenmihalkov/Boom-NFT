@@ -6,11 +6,11 @@ import styles from "./Card.module.scss";
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
-import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Chip from "@mui/material/Chip";
+import Countdown from 'react-countdown';
 
 
 
@@ -28,6 +28,7 @@ export default function NftCard({
     currency = ""
 
 }) {
+    
     return(
         <Card className={classNames(styles.card)}>
             <CardHeader
@@ -47,8 +48,8 @@ export default function NftCard({
             <CardContent>
                 <Typography variant="body2" className={classNames(styles.detailsWrapper)}>
                     <div className={classNames(styles.infoWrapper)}>
-                        <p className={classNames(styles.title)}>{name}</p>
-                        <p className={classNames(styles.price)}>~{price} {currency}</p>
+                        <div className={classNames(styles.title)}>{name}</div>
+                        <div className={classNames(styles.price)}>~{price} {currency}</div>
                     </div>
                     <div className={classNames(styles.likesWrapper)}>
                         <Chip 
