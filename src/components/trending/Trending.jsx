@@ -1,4 +1,4 @@
-import {Container,Grid,Select, Typography, MenuItem, FormControl,InputLabel  } from "@mui/material";
+import {Container, Grid, Select, Typography, MenuItem, FormControl} from "@mui/material";
 import Card from "../card/Card";
 import styes from "./Trending.module.scss";
 
@@ -7,12 +7,12 @@ export default function Trending ({ cards = []}) {
     return(
         <>
         
-        <Container maxWidth="sm" className={styes.trendingWrapper}>
+        <Container maxWidth="sm" >
             <div className={styes.headingWrapper}>
                 <Typography variant="h2" align="left" className={styes.heading}>Trending</Typography>
                 <div className={styes.selectWrapper}>
                     <FormControl sx={{ m: 1, minWidth: 220 }}>
-                        <Select className={styes.selectElement} >
+                        <Select>
                             <MenuItem value={1}>This week</MenuItem>
                         </Select>
                     </FormControl>
