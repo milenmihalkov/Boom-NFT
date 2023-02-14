@@ -8,16 +8,8 @@ export default function Trending({ cards = []}) {
             <div className={styes.headingWrapper}>
                 <Typography variant="h2" align="left" className={styes.heading}>Trending</Typography>
                 <div className={styes.selectWrapper}>
-                    <FormControl>
-                        <Select
-                        sx={{
-                            width: "220px",
-                            height: "50px",
-                            borderRadius: "30px",
-                        }}
-                            id="trending-filter"
-                            value='This Week'
-                            onChange=''>
+                    <FormControl sx={{ m: 1, minWidth: 220 }}>
+                        <Select className={styes.selectElement} >
                             <MenuItem value={1}>This week</MenuItem>
                         </Select>
                     </FormControl>
