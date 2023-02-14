@@ -1,8 +1,9 @@
 import {Container,Grid,Select, Typography, MenuItem, FormControl,InputLabel  } from "@mui/material";
-import {NftCard as Card} from "../card/Card";
+import Card from "../card/Card";
 import styes from "./Trending.module.scss";
 
-export default function Trending({ cards = []}) {
+export default function Trending ({ cards = []}) {
+    
     return(
         <Container maxWidth="sx" className={styes.trendingWrapper}>
             <div className={styes.headingWrapper}>
