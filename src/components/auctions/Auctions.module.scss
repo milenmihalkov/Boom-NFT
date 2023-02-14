@@ -1,0 +1,24 @@
+@use "../../styles/colors";
+@use "../../styles/fonts";
+
+.headingWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading{
+    font-family: fonts.$font-family-Montserrat;
+    font-weight: fonts.$trnding-title-fw;
+    font-size: fonts.$trnding-title-size !important;
+}
+
+.trendingWrapper {
+    padding: 50px;
+    background-color: colors.$background_default;
+  }
+
+  .selectElement{
+    width: "220px";
+    height: "50px";
+    border-radius: "30px";
+  }
