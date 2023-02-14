@@ -13,7 +13,7 @@ const App =()=> {
     return (
       <div className="App">
         <Header />
-        <Trending/>
+        <Card/>
       </div>
     );
   };

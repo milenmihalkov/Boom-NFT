@@ -5,7 +5,9 @@ import styes from "./Trending.module.scss";
 export default function Trending ({ cards = []}) {
     
     return(
-        <Container maxWidth="sx" className={styes.trendingWrapper}>
+        <>
+        
+        <Container maxWidth="sm" className={styes.trendingWrapper}>
             <div className={styes.headingWrapper}>
                 <Typography variant="h2" align="left" className={styes.heading}>Trending</Typography>
                 <div className={styes.selectWrapper}>
@@ -24,5 +26,6 @@ export default function Trending ({ cards = []}) {
                 ))}
             </Grid>
         </Container>
+        </>
     )
 };

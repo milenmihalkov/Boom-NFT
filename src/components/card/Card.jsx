@@ -35,12 +35,15 @@ export default function NftCard({
                     <Avatar url={user.avatar.url} size={40} verified={user.verified}  className={classNames(styles.avatar)}/>
                 }
             />
-             <CardMedia
-                component="img"
-                image={mediaUrl}
-                alt={name}
-                className={classNames(styles.media)}
-            />
+            <div className={styles.cardMediaWrapper}>
+                <CardMedia
+                    component="img"
+                    image={mediaUrl}
+                    alt={name}
+                    className={classNames(styles.media)}
+                />
+                <div>TEST</div>
+            </div>
             <CardContent>
                 <Typography variant="body2" className={classNames(styles.detailsWrapper)}>
                     <div className={classNames(styles.infoWrapper)}>
