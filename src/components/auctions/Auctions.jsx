@@ -5,7 +5,59 @@ import Card from "../card/Card";
 import styes from "./Auctions.module.scss";
 import { useState } from "react";
 
-export default function Auctions ({ cards = []}) {
+export default function Auctions ({ cards = [{
+    "name":"Ivy",
+    "user":{
+       "avatar":{
+          "url":"images/avatar.png"
+       },
+       "verified":true
+    },
+    "mediaUrl":"images/nft.jpg",
+    "price":1,
+    "currency":"ETH",
+    "timeLeft":132136
+ },
+ {
+    "name":"Judie",
+    "user":{
+       "avatar":{
+          "url":"images/avatar.png"
+       },
+       "verified":true
+    },
+    "mediaUrl":"images/nft.jpg",
+    "price":2.3,
+    "currency":"ETH",
+    "timeLeft":132136
+ },
+ {
+    "name":"Juniper",
+    "user":{
+       "avatar":{
+          "url":"images/avatar.png"
+       },
+       "verified":true
+    },
+    "mediaUrl":"images/nft.jpg",
+    "price":5,
+    "currency":"ETH",
+    "timeLeft":132136
+ },
+ {
+    "name":"Maple",
+    "user":{
+       "avatar":{
+          "url":"images/avatar.png"
+       },
+       "verified":true
+    },
+    "mediaUrl":"images/nft.jpg",
+    "price":10,
+    "currency":"ETH",
+    "timeLeft":132136
+
+ }]}) {
     const [time, setTime] = useState('');
 
   const handleChange = (event) => {
