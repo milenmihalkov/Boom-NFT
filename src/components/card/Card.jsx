@@ -11,6 +11,7 @@ import CardContent from '@mui/material/CardContent';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Chip from "@mui/material/Chip";
 import Countdown from 'react-countdown';
+import CircleIcon from "@mui/icons-material/Circle";
 
 
 
@@ -25,12 +26,12 @@ export default function NftCard({
         verified:false
     },
     price = "",
-    currency = ""
-
+    currency = "",
+    timeLeft
 }) {
     
     return(
-        <Card className={classNames(styles.card)}>
+        <Card className={classNames(styles.card,{[styles.cardLive]: timeLeft})}>
             <CardHeader
                 avatar={
                     <Avatar url={user.avatar.url} size={40} verified={user.verified}  className={classNames(styles.avatar)}/>
@@ -43,7 +44,12 @@ export default function NftCard({
                     alt={name}
                     className={classNames(styles.media)}
                 />
-                <div>TEST</div>
+               { timeLeft ? (
+                <>
+                <div className={styles.badge}> <CircleIcon fontSize="11px" /><span className={classNames(styles.badgeText)}>LIVE</span></div>
+                <div className={styles.countdownWrapper}><Countdown date={Date.now() + timeLeft} /></div>
+                </>
+               ):null}
             </div>
             <CardContent>
                 <Typography variant="body2" className={classNames(styles.detailsWrapper)}>
