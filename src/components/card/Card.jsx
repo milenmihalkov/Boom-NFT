@@ -15,17 +15,17 @@ import Chip from "@mui/material/Chip";
 
 
 export default function NftCard({
-    name="Clock",
-    likes   =0,
-    mediaUrl="./images/nft.jpg",
+    name="",
+    likes=0,
+    mediaUrl="",
     user    ={
         avatar:{
-            url:'./images/avatar.png'
+            url:""
         },
-        verified:true
+        verified:false
     },
-    price = 12.2,
-    currency = "ETN"
+    price = "",
+    currency = ""
 
 }) {
     return(
