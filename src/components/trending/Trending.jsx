@@ -60,7 +60,7 @@ export default function Trending ({ cards = [{
   };
     return(
         <div>
-        <Container maxWidth="sx" >
+        <Container maxWidth="xl" >
             <div className={styes.headingWrapper}>
                 <Typography variant="h2" align="left" className={styes.heading}>Trending</Typography>
                 <div className={styes.selectWrapper}>

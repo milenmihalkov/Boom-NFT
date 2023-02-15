@@ -1,0 +1,33 @@
+@use "../../styles/colors";
+@use "../../styles/fonts";
+
+.sectionHowWrapper{
+    margin: 100px 0 !important;
+    padding: 30px 0 !important;
+}
+
+.sectionHowInnerWrapper{
+    background-color: colors.$primary_main;
+  
+}
+
+.sectionHowGridWrapper{
+    display: flex !important;
+    align-items: center ;
+    justify-content: space-evenly;
+}
+
+.contentWrapper{
+    max-width: 60%;
+}
+
+.learnMoreBtn{
+    margin-top: 30px !important;
+    background-color: colors.$text_primary !important;
+     color: colors.$primary_main !important;
+
+}
+
+.rightSideStep{
+    margin: -100px 0 !important;
+}

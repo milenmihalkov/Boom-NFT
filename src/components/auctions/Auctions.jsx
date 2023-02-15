@@ -65,7 +65,7 @@ export default function Auctions ({ cards = [{
   };
     return(
         <div>
-        <Container maxWidth="sx" >
+        <Container maxWidth="xl" >
             <div className={styes.headingWrapper}>
                 <Typography variant="h2" align="left" className={styes.heading}>🔥 Live Auctions</Typography>
                 <div className={styes.selectWrapper}>
