@@ -4,10 +4,9 @@ import {Typography, Grid, Box } from '@mui/material';
 
 export default function Step({number,title,description}) {
     return (
-
         <Box className={styles.stepWrapper}>
-            <Grid container sx={{ display: "flex", alignItems : "center",justifyContent: "space-evenly" }}>
-                <Grid item xs={4} className={styles.stepNumberWrapper} sx={{backgroundColor: "rgba(colors.$primary_main, 0.1)"}}>
+            <Grid container className={styles.gridContainer}>
+                <Grid item xs={4} className={styles.stepNumberWrapper}>
                     <Typography className={styles.stepNumber}>{number}</Typography>
                 </Grid>
                 <Grid item xs={8} className={styles.stepContentWrapper}>
