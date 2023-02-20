@@ -4,8 +4,8 @@ import Step from './Step';
 import styles from './How.module.scss';
 
 export default function How({
-    description="",
-    title="",
+    description="Discover, collect, and sell extraordinary NFTs on the world's first & largest NFT marketplace. There are  three things you'll need in place to open your account and start buying or selling NFTs on BUM.",
+    title="HOW IT WORKS",
     items = [],
     link
 

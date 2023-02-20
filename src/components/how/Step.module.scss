@@ -5,45 +5,52 @@
     background: colors.$background_paper;
     border-radius: 30px;
     margin: 50px 0px;
-    
+    height: 215px;
     
 }
 .gridContainer{
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
     width: auto;
-    height: 190px;
-    // gap: 2px;
+    height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .stepNumberWrapper{
-    background-color: rgba(colors.$primary_main, 0.1) !important;
+    background-color: rgba(colors.$primary_main, 10%) !important;
     border-radius: 30px 0 0 30px;
-    align-items: center !important;
-    display: flex;
-    justify-content: center;
     height: 100%;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .stepNumber{
-    background-color: rgba(colors.$primary_main, 0.1) !important;
+    background-color: rgba(colors.$primary_main, 10%) !important;
     font-size: 5rem !important;
     font-family: fonts.$font-family-Montserrat;
     font-weight:  fonts.$trnding-title-fw !important;
     text-align: center;
     display: block;
-
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .stepContentWrapper{
     padding: 20px;
+    align-self: stretch;
+
 }
 
 .stepTitle{
     font-family: fonts.$font-family-Montserrat;
     font-weight:  fonts.$trnding-title-fw !important;
     font-size: 0.8rem !important;
+    
 }
 
 .stepDescription{

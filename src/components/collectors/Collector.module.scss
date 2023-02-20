@@ -1,0 +1,47 @@
+@use "../../styles/colors.scss";
+@use "../../styles/fonts.scss";
+
+.container{
+    width: 100%;
+    position: relative;
+    height: 76px;
+}
+
+.collectorWrapper{
+    display: flex;
+    align-items: center !important;
+    justify-content: space-evenly;
+    gap: 10px;  
+      
+}
+
+.numberWrapper{
+    background-color: rgb(colors.$primary_main, 0.1);
+    text-align: center;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.number{
+    font-family: fonts.$font-family-Montserrat;
+    font-weight: fonts.$card-title-font-weight !important;
+    font-size: 20px !important;
+    line-height: 24px !important;    
+}
+
+.collectorInfoWrapper{
+    flex-grow: 3;
+    padding: 10.5px 0;
+}
+.lightBg{
+    background-color: rgb(colors.$primary_main, 0.1);
+}
+.darkBg{
+    background-color: rgb(colors.$primary_main, 0.3);
+}
+.container:first-of-type{
+   
+}

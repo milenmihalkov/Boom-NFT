@@ -4,6 +4,9 @@ import Trending from "./components/trending/Trending";
 import Acutions from "./components/auctions/Auctions"
 import Footer from "./components/footer/Footer";
 import How from './components/how/How';
+import Featured from "./components/featured/Featured";
+// import Collector from "./components/collectors/Collector";
+import TopCollectors from "./components/collectors/TopCollectors";
 // import Paper from "@mui/material/Paper";
 // import Container from "@mui/material/Container";
 // import Link from "../link/Link";
@@ -35,6 +38,8 @@ const App =()=> {
           items={items}
           link="https://example.com"
         />
+        <Featured/>
+        <TopCollectors/>
         <Footer/>
       </div>
     );

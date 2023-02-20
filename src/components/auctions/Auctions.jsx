@@ -2,7 +2,7 @@ import React from "react";
 import {Grid, Select, Typography, MenuItem, FormControl} from "@mui/material";
 import Container from "@mui/material/Container";
 import Card from "../card/Card";
-import styes from "./Auctions.module.scss";
+import styles from "./Auctions.module.scss";
 import { useState } from "react";
 
 export default function Auctions ({ cards = [{
@@ -61,14 +61,14 @@ export default function Auctions ({ cards = [{
     const [time, setTime] = useState('');
 
   const handleChange = (event) => {
-    setAge(event.target.value);
+   setTime(event.target.value);
   };
     return(
         <div>
         <Container maxWidth="xl" >
-            <div className={styes.headingWrapper}>
-                <Typography variant="h2" align="left" className={styes.heading}>🔥 Live Auctions</Typography>
-                <div className={styes.selectWrapper}>
+            <div className={styles.headingWrapper}>
+                <Typography variant="h2" align="left" className={styles.heading}>🔥 Live Auctions</Typography>
+                <div className={styles.selectWrapper}>
                     <FormControl sx={{ m: 1, minWidth: 220 }}>
                         <Select
                             defaultValue={1}
