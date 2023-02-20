@@ -13,8 +13,8 @@ export default function TopCollectors({collectors=[]}) {
      setSort(event.target.value);
     };
 
-//  const chunkedCollectors = chunk(collectors.map((collector, index) => ({...collector, id: index + 1, key: index + 1})),3);
-    const chunkedCollectors = chunk(collectors.map(({id, ...rest}, index) => ({...rest, id: index + 1, key: index + 1})),3);
+ const chunkedCollectors = chunk(collectors.map((collector, index) => ({...collector, id: index + 1, key: index + 1})),3);
+    // const chunkedCollectors = chunk(collectors.map(({id, ...rest}, index) => ({...rest, id: index + 1, key: index + 1})),3);
 
     return(
 
