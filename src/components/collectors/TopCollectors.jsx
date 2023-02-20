@@ -1,9 +1,10 @@
 import {Grid, Select, Typography, MenuItem, FormControl, Box} from "@mui/material";
 import Container from "@mui/material/Container";
-import CollectorColumn from "./CollectorColumn";
 import chunk from "lodash.chunk";
 import styles from "./TopCollectors.module.scss";
 import { useState } from "react";
+
+import CollectorColumn from "./CollectorColumn";
 
 export default function TopCollectors({collectors=[]}) {
     
