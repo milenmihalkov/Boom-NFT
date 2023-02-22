@@ -18,29 +18,30 @@ export default function TopCollectors({ collectors=[] }) {
 
     return(
 
-        
-        <Container maxWidth="xl">
-            <Box className={styles.headingWrapper}>
-                <Typography variant="h2" align="left" className={styles.heading}>Top Collectors</Typography>
-                <Box className={styles.selectWrapper}>
-                    <FormControl sx={{ m: 1, minWidth: 220 }}>
-                        <Select defaultValue={1} onChange={handleChange}  >
-                            <MenuItem value={1}>Sort by</MenuItem>
-                            <MenuItem value={2}>Id</MenuItem>
-                        </Select>
-                    </FormControl>
+        <div>
+            <Container maxWidth="xl">
+                <Box className={styles.headingWrapper}>
+                    <Typography variant="h2" align="left" className={styles.heading}>Top Collectors</Typography>
+                    <Box className={styles.selectWrapper}>
+                        <FormControl sx={{ m: 1, minWidth: 220 }}>
+                            <Select defaultValue={1} onChange={handleChange}  >
+                                <MenuItem value={1}>Sort by</MenuItem>
+                                <MenuItem value={2}>Id</MenuItem>
+                            </Select>
+                        </FormControl>
+                    </Box>
                 </Box>
-            </Box>
-            <Box className={styles.contentWrapper}>
-            <Grid container spacing={2}>
-                {chunkedCollectors.map((chunkedCollector, index) => (
-                    <Grid item xs={3} id={index} key={index}>
-                        <CollectorColumn items={chunkedCollector} />
-                    </Grid>
-                ))}
-            </Grid>
-            </Box>
-                        
-        </Container>
+                <Box className={styles.contentWrapper}>
+                <Grid container spacing={2}>
+                    {chunkedCollectors.map((chunkedCollector, index) => (
+                        <Grid item xs={3} id={index} key={index}>
+                            <CollectorColumn items={chunkedCollector} />
+                        </Grid>
+                    ))}
+                </Grid>
+                </Box>
+                            
+            </Container>
+        </div>
     )
 };

@@ -72,7 +72,7 @@
           "height": 138,
           "size": 3.67,
           "path": null,
-          "url": "https://nft-auction.herokuapp.com/uploads/thumbnail_0x7d9debcf75a71bbb5c533804c9845d313fe3f6aa_ec98dd79b9.jpg"
+          "url": "./public/images/nft.jpg"
         }
       },
       "hash": "0x7d9debcf75a71bbb5c533804c9845d313fe3f6aa_ec98dd79b9",
