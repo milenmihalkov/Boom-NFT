@@ -1,7 +1,8 @@
-.product-info-title{
+@use "../../styles/colors";
 
+.product-info-title {
+  font-weight: bold;
 }
-
 .title {
-
+  color: colors.$text_primary;
 }
