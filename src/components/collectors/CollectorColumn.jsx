@@ -2,7 +2,7 @@ import Collector from "./Collector";
 import {Typography, Box} from '@mui/material';
 import styles from "./CollectorColumn.module.scss";
 
-export default function CollectorsColumn({items =[]}) {
+export default function CollectorColumn({items =[]}) {
     return(
         <Box className={styles.columnContainer}>
             {items.map((item, index)=>(
