@@ -1,3 +1,13 @@
+import * as React from "react";
+import classNames from "classnames";
+import styles from "./ProductInfoTimer.module.scss";
+
+import * as myModule from "@mui/material";
+
+import Countdown from "react-countdown";
+
+import Typography from "@mui/material/Typography";
+
 export default function ProductInfoTimer({timeEnd,onTimeEnd }) {
     const countDownTimer = timeEnd ? (
         <Countdown
